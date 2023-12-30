@@ -3,17 +3,26 @@ import React, { Component } from "react";
 class Counter extends Component {
   state = {
     count: 0,
-    
   };
   handelIncrement = () => {
-    this.setState({count : this.state.count + 1})
-  }
+    this.setState({ count: this.state.count + 1 });
+  };
   render() {
     return (
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
-        <button onClick={this.handelIncrement} className="btn btn-secondary btn-sm">Increment</button>
-        
+        <button
+          onClick={this.handelIncrement}
+          className="btn btn-secondary btn-sm"
+        >
+          Increment
+        </button>
       </div>
     );
   }

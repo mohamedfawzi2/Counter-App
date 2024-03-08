@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 
-
-const NavBar = ({totalCounters}) => {
+const NavBar = ({ totalCounters }) => {
   return (
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Navbar{" "}
+    <div className="d-flex justify-content-center align-items-center">
+      <nav className="navbar navbar-light bg-light  ">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            Count =
             <span className="badge badge-pill badge-secondary">
               {totalCounters}
             </span>
           </a>
         </div>
       </nav>
-    );
-}
-
+    </div>
+  );
+};
 
 export default NavBar;
